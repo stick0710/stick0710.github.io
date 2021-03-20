@@ -22,7 +22,7 @@ title: STICK
 email: jeongteak06@naver.com
 description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://st1ck.kro.kr
+url: "https://st1ck.kro.kr" # the base hostname & protocol for your site, e.g. http://st1ck.kro.kr
 github_username:  stick0710
 
 # Build settings
