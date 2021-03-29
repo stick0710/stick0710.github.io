@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>github &amp; git 사용법 - 막대기의 개발블로그</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="막대기의 개발블로그"><meta name="msapplication-TileImage" content="/img/favicon.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="막대기의 개발블로그"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="GIT은 무엇인가깃(git)은 컴퓨터 파일의 변경사항을 추적하고 여러 명의 사용자들 간에 해당 파일들의 작업을 조율하기 위한 분산 버전 관리 시스템입니다.   출처 위키피디아"><meta property="og:type" content="blog"><meta property="og:title" content="github &amp; git 사용법"><meta property="og:url" content="https://akreorl.xyz/"><meta property="og:site_name" content="막대기의 개발블로그"><meta property="og:description" content="GIT은 무엇인가깃(git)은 컴퓨터 파일의 변경사항을 추적하고 여러 명의 사용자들 간에 해당 파일들의 작업을 조율하기 위한 분산 버전 관리 시스템입니다.   출처 위키피디아"><meta property="og:locale" content="ko_KR"><meta property="og:image" content="https://akreorl.xyz/image/githubsignup.png"><meta property="og:image" content="https://akreorl.xyz/image/githubmakerepositories.png"><meta property="og:image" content="https://akreorl.xyz/image/githubrepository.png"><meta property="og:image" content="https://akreorl.xyz/image/gitdownload.png"><meta property="og:image" content="https://akreorl.xyz/image/gitbash.png"><meta property="og:image" content="https://akreorl.xyz/image/gitbash1.png"><meta property="og:image" content="https://akreorl.xyz/image/gitbash2.png"><meta property="og:image" content="https://akreorl.xyz/image/gitbash3.png"><meta property="og:image" content="https://akreorl.xyz/image/gitbash4.png"><meta property="og:image" content="https://akreorl.xyz/image/git.png"><meta property="og:image" content="https://akreorl.xyz/image/git2.png"><meta property="og:image" content="https://akreorl.xyz/image/git3.png"><meta property="og:image" content="https://akreorl.xyz/image/git4.png"><meta property="article:published_time" content="2021-03-22T05:35:04.000Z"><meta property="article:modified_time" content="2021-03-26T13:35:50.250Z"><meta property="article:author" content="stick"><meta property="article:tag" content="github"><meta property="article:tag" content="git"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/image/githubsignup.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://akreorl.xyz"},"headline":"github & git 사용법","image":["https://akreorl.xyz/image/githubsignup.png","https://akreorl.xyz/image/githubmakerepositories.png","https://akreorl.xyz/image/githubrepository.png","https://akreorl.xyz/image/gitdownload.png","https://akreorl.xyz/image/gitbash.png","https://akreorl.xyz/image/gitbash1.png","https://akreorl.xyz/image/gitbash2.png","https://akreorl.xyz/image/gitbash3.png","https://akreorl.xyz/image/gitbash4.png","https://akreorl.xyz/image/git.png","https://akreorl.xyz/image/git2.png","https://akreorl.xyz/image/git3.png","https://akreorl.xyz/image/git4.png"],"datePublished":"2021-03-22T05:35:04.000Z","dateModified":"2021-03-26T13:35:50.250Z","author":{"@type":"Person","name":"stick"},"description":"GIT은 무엇인가깃(git)은 컴퓨터 파일의 변경사항을 추적하고 여러 명의 사용자들 간에 해당 파일들의 작업을 조율하기 위한 분산 버전 관리 시스템입니다.   출처 위키피디아"}</script><link rel="canonical" href="https://akreorl.xyz/2021/03/22/github%20&amp;%20git%20%EC%82%AC%EC%9A%A9%EB%B2%95/"><link rel="alternate" href="/rss.xml" title="막대기의 개발블로그" type="application/atom+xml"><link rel="icon" href="/img/favicon.png"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><!--!--><!--!--><meta name="generator" content="Hexo 5.4.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.jpg" alt="막대기의 개발블로그" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">About</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="external nofollow noopener noreferrer" title="Download on GitHub" href="https://github.com/stick0710/stick0710.github.io"><i class="fab fa-github"></i></a><a class="navbar-item search" title="검색" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time datetime="2021-03-22T05:35:04.000Z" title="2021. 3. 22. 오후 2:35:04">2021-03-22</time>&nbsp;게시 됨</span><span class="level-item"><time datetime="2021-03-26T13:35:50.250Z" title="2021. 3. 26. 오후 10:35:50">2021-03-26</time>&nbsp;업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/%EA%B0%9C%EB%B0%9C/">개발</a><span> / </span><a class="link-muted" href="/categories/%EA%B0%9C%EB%B0%9C/github/">github</a></span><span class="level-item">7분안에 읽기 (약 1087 단어)</span></div></div><h1 class="title is-3 is-size-4-mobile">github &amp; git 사용법</h1><div class="content"><h2 id="GIT은-무엇인가"><a href="#GIT은-무엇인가" class="headerlink" title="GIT은 무엇인가"></a>GIT은 무엇인가</h2><p>깃(git)은 컴퓨터 파일의 변경사항을 추적하고 여러 명의 사용자들 간에 해당 파일들의 작업을 조율하기 위한 분산 버전 관리 시스템입니다. </p>
+<ul>
+<li>출처 위키피디아</li>
+</ul>
+<span id="more"></span>
+
+<p><del>그렇다고 한다</del></p>
+<h3 id="그렇다면-깃-git-과-깃허브-github-는-무슨-관계일까요"><a href="#그렇다면-깃-git-과-깃허브-github-는-무슨-관계일까요" class="headerlink" title="그렇다면 깃(git)과 깃허브(github)는 무슨 관계일까요"></a>그렇다면 깃(git)과 깃허브(github)는 무슨 관계일까요</h3><p>깃허브는 gitlab,bitbucket 등과 같이 대표적인 git 저장소입니다.</p>
+<h2 id="github-회원가입"><a href="#github-회원가입" class="headerlink" title="github 회원가입"></a>github 회원가입</h2><p>먼저 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/">github</a> 홈페이지에 들어가 줍니다</p>
+<p><img src="/image/githubsignup.png"><br>그리고 우측 상단에 있는 <strong>signup</strong> 버튼을 눌러 계정을 생성해 줍니다</p>
+<h2 id="깃허브-레파지토리-만들기"><a href="#깃허브-레파지토리-만들기" class="headerlink" title="깃허브 레파지토리 만들기"></a>깃허브 레파지토리 만들기</h2><p>회원가입을 완료했으면 </p>
+<p><img src="/image/githubmakerepositories.png"></p>
+<p>좌측 상단 Repositories 라고 적혀있는 곳 옆에 <strong>new</strong> 버튼을 눌러 레파지토리를 생성해 줍니다<br><img src="/image/githubrepository.png"></p>
+<p>Repository name 이라고 적힌곳에는 레파지토리의 이름을, Description 이라고 적힌곳에는 레파지토리의 설명을 적어주시면 됩니다</p>
+<p>Public 과 private 을 고를수 있는데<br>Public 으로 설정하시면 다른 사람이 당신의 레파지토리를 볼수 있고 private 으로 하면 다른 사람들이 보지 못합니다.</p>
+<h2 id="git-다운로드-amp-최초-설정"><a href="#git-다운로드-amp-최초-설정" class="headerlink" title="git 다운로드 &amp; 최초 설정"></a>git 다운로드 &amp; 최초 설정</h2><p>자 여기까지는 깃허브(github)를 회원가입하고 레파지토리를 만들어 봤는데요.</p>
+<p>이번엔 git 을 설치하여 레파지토리를 clone 하고 remote 해보도록 하겟습니다</p>
+<p>먼저 <a target="_blank" rel="external nofollow noopener noreferrer" href="https://git-scm.com/">git</a> 홈페이지에 들어가</p>
+<p><img src="/image/gitdownload.png"></p>
+<p>우측에 있는 다운로드 버튼을 눌러 설치를 해줍니다.</p>
+<p>설치가 완료되었으면 </p>
+<p>window 키를 누르고</p>
+<p><img src="/image/gitbash.png"></p>
+<p>git bash 를 입력, 엔터를 눌러 실행해줍니다</p>
+<p>아니면 </p>
+<p><img src="/image/gitbash1.png"></p>
+<p>원하는 폴더에 가서 우클릭을 하고 git bash here를 눌러줍니다</p>
+<p><img src="/image/gitbash2.png"></p>
+<p>그러면 이런 창이 하나 뜰텐데</p>
+<p>처음으로 해야 할 일은 사용자 정보 등록입니다</p>
+<p>사용자 정보<br>Git을 설치하고 나서 가장 먼저 해야 하는 것은 사용자이름과 이메일 주소를 설정하는 것이다. Git은 커밋할 때마다 이 정보를 사용한다. 한 번 커밋한 후에는 정보를 변경할 수 없다.</p>
+<ul>
+<li>git 공식 문서</li>
+</ul>
+<p><code>$ git config --global user.name &quot;자신의 이름&quot;</code><br><code>$ git config --global user.email 자신의@이메일</code> 을 입력해줍니다</p>
+<p><img src="/image/gitbash3.png"></p>
+<p><img src="/image/gitbash4.png"></p>
+<p>그리고 <code>$ git config --list</code> 으로 확인할 수도 있습니다</p>
+<h2 id="git-저장소-만들고-remote-하기"><a href="#git-저장소-만들고-remote-하기" class="headerlink" title="git 저장소 만들고 remote 하기"></a>git 저장소 만들고 remote 하기</h2><p>아까 폴더에서 git bash here 을 이용해 연 사람들은 넘어가고 git bash를 그냥 연 사람들은 cd 명령어를 이용해 자신이 원하는 폴더로 가줍니다</p>
+<p>원하는 폴더에 도착했으면 </p>
+<p><code>$ git init</code> 를 이용해 새로운 git저장소를 만든 다음</p>
+<p><img src="/image/git.png"></p>
+<p>숨긴 항목을 표시하면</p>
+<p><img src="/image/git2.png"></p>
+<p>다음과 같이 .git 폴더가 생성되어있는것을 확인하실수 있습니다</p>
+<p>그럼 이제 리모트 저장소를 추가할 차례입니다(remote)</p>
+<p><code>$ git remote add 저장소 주소.git</code><br>ex)<code>$ git remote add origin https://github.com/유저명/레파지토리.git</code></p>
+<p>이렇게 아까 생성한 깃허브 레파지토리를 remote 해줍니다</p>
+<p><img src="/image/git3.png"></p>
+<p>###git remote 추가 명령어</p>
+<ol>
+<li>commit</li>
+</ol>
+<p>추가하거나 바뀐 파일을 <code>$ git add &lt;filename&gt;</code>으로 커밋해줍니다</p>
+<p>파일이 여러개라면 <code>$ git add *</code>으로 모두 커밋합니다</p>
+<p>ex)<code>$ git commit -m &quot;커밋 메세지&quot;</code>로 커밋해줍니다</p>
+<p>하지만 이렇게 해서는 원격 저장소에 아무 영향이 가지 않습니다</p>
+<ol start="2">
+<li>원격 저장소에 push 하기</li>
+</ol>
+<p><code>$ git push origin &lt;branch명&gt;</code> 으로 push 해줍니다</p>
+<p>ex)<code>$ git push origin master</code> master branch로 push하고싶으면 이렇게 하면 됩니다</p>
+<p><img src="/image/git4.png"></p>
+<p>이런 창이 뜨면 로그인 해주시면 됩니다</p>
+<p>그 후 깃허브에 가셔서 레파지토리 확인해보시면 변경되어 있는것을 확인하실수 있습니다</p>
+<ul>
+<li><a target="_blank" rel="external nofollow noopener noreferrer" href="https://github.com/">https://github.com/</a></li>
+<li><a target="_blank" rel="external nofollow noopener noreferrer" href="https://git-scm.com/">https://git-scm.com/</a></li>
+<li><a target="_blank" rel="external nofollow noopener noreferrer" href="https://ko.wikipedia.org/wiki/%EA%B9%83%ED%97%88%EB%B8%8C">https://ko.wikipedia.org/wiki/%EA%B9%83%ED%97%88%EB%B8%8C</a></li>
+<li><a target="_blank" rel="external nofollow noopener noreferrer" href="https://ko.wikipedia.org/wiki/%EA%B9%83_(%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4)">https://ko.wikipedia.org/wiki/%EA%B9%83_(%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4)</a></li>
+<li><a target="_blank" rel="external nofollow noopener noreferrer" href="https://git-scm.com/doc">https://git-scm.com/doc</a></li>
+</ul>
+</div><div class="article-licensing box"><div class="licensing-title"><p>github &amp; git 사용법</p><p><a href="https://akreorl.xyz/2021/03/22/github &amp; git 사용법/">https://akreorl.xyz/2021/03/22/github &amp; git 사용법/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>Author</h6><p>stick</p></div></div><div class="level-item is-narrow"><div><h6>Posted on</h6><p>2021-03-22</p></div></div><div class="level-item is-narrow"><div><h6>Updated on</h6><p>2021-03-26</p></div></div><div class="level-item is-narrow"><div><h6>Licensed under</h6><p><a class="icon" rel="external nofollow noopener noreferrer" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a class="icon" rel="external nofollow noopener noreferrer" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a><a class="icon" rel="external nofollow noopener noreferrer" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/github/">github</a><a class="link-muted mr-2" rel="tag" href="/tags/git/">git</a></div><div class="sharethis-inline-share-buttons"></div><script src="https://platform-api.sharethis.com/js/sharethis.js#property=605725810e267500127ccbf6&amp;product=inline-share-buttons" defer></script></article></div><!--!--><div class="card"><div class="card-content"><h3 class="title is-5">댓글</h3><div id="disqus_thread"><noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div><script>var disqus_config = function () {
+            this.page.url = 'https://akreorl.xyz/2021/03/22/github%20&%20git%20%EC%82%AC%EC%9A%A9%EB%B2%95/';
+            this.page.identifier = '2021/03/22/github & git 사용법/';
+        };
+        (function() {
+            var d = document, s = d.createElement('script');  
+            s.src = '//' + 'st1ck' + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/avatar.png" alt="stick"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">stick</p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">포스트</p><a href="/archives"><p class="title">1</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">카테고리</p><a href="/categories"><p class="title">2</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">태그</p><a href="/tags"><p class="title">2</p></a></div></div></nav></div></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">최근 글</h3><article class="media"><div class="media-content"><p class="date"><time datetime="2021-03-22T05:35:04.000Z">2021-03-22</time></p><p class="title"><a href="/2021/03/22/github%20&amp;%20git%20%EC%82%AC%EC%9A%A9%EB%B2%95/">github &amp; git 사용법</a></p><p class="categories"><a href="/categories/%EA%B0%9C%EB%B0%9C/">개발</a> / <a href="/categories/%EA%B0%9C%EB%B0%9C/github/">github</a></p></div></article></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.jpg" alt="막대기의 개발블로그" height="28"></a><p class="is-size-7"><span>&copy; 2021 stick</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="external nofollow noopener noreferrer">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="external nofollow noopener noreferrer">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="external nofollow noopener noreferrer" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="external nofollow noopener noreferrer" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="external nofollow noopener noreferrer" title="Download on GitHub" href="https://github.com/stick0710/stick0710.github.io"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("ko");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="맨 위로" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "이 웹 사이트는 귀하의 경험을 향상시키기 위해 Cookie를 사용합니다.",
+          dismiss: "무시",
+          allow: "허용",
+          deny: "거부",
+          link: "더 알아보기",
+          policy: "Cookie 정책",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="입력 하세요..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"입력 하세요...","untitled":"(제목 없음)","posts":"포스트","pages":"페이지","categories":"카테고리","tags":"태그"});
+        });</script></body></html>
